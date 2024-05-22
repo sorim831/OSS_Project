@@ -11,7 +11,7 @@
 - 추가 및 수정한 부분 : width, padding 변경, 정렬 변경
 - 추가 및 수정할 부분 : 배경색 변경, font-family 변경 + 기타등등
 
-2. ~ / 링크
+2. (https://ic.kw.ac.kr/main/main.php)
 
-- 활용한 부분 :
-- 추가 및 수정한 부분 :
+- 활용한 부분 : html의 footer 요소
+- 추가 및 수정한 부분 : 내용 수정

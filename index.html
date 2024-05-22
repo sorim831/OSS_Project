@@ -21,17 +21,43 @@
     </nav>
   </header>
   <body>
-    <section>
-      <article class="profile_picture">
-        <img src="img/나중에_내사진으로_바꿀예정.jpg" alt="송승규 사진" />
-        <div>
-          <h1>송승규</h1>
-          <h2>정보융합학부</h2>
+    <main>
+      <section id="prifile">
+        <article class="profile_picture">
+          <img src="img/나중에_내사진으로_바꿀예정.jpg" alt="송승규 사진" />
+          <div class="introduction">
+            <p>
+              이름 : 송승규, 나이 : 만 몇세 이렇게 리스트로 쓰거나 나에 대한
+              내용 여기에 쭉 쓰기
+            </p>
+          </div>
+        </article>
+        <div class="info">
+          <!--<h1>송승규</h1>
+          <h2>정보융합학부</h2>-->
+          <ul class="contact">
+            <li>
+              <i class="fab fab fa-facebook-f"></i>
+              <span>010-6285-7031</span>
+            </li>
+            <li>
+              <i class="fab fab fa-facebook-f"></i>
+              <span>sorim831@naver.com</span>
+            </li>
+          </ul>
         </div>
-        <div class="introduction">
-          <p>자기소개 옆으로 정렬</p>
-        </div>
-      </article>
-    </section>
+      </section>
+
+      <section id="guestbook">
+        <h2>방명록</h2>
+        <form>
+          <input type="text" id="name" placeholder="이름" required />
+          <textarea id="message" placeholder="메시지" required></textarea>
+          <button type="submit">방명록 남기기</button>
+        </form>
+        <div id="messages"></div>
+      </section>
+    </main>
+    <footer><p>COPYRIGHTⓒKWANGWOON UNIVERSITY. ALL RIGHTS RESERVED</p></footer>
   </body>
 </html>

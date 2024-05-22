@@ -21,7 +21,7 @@ a {
 }
 
 body {
-  background-color: darksalmon; /*바꿀예정*/
+  background-color: darkslategrey; /*바꿀예정*/
 }
 
 /*헤더 영역 만들기*/
@@ -45,8 +45,10 @@ section {
 
 /*프로필 사진*/
 section article.profile_picture {
+  display: flex;
   width: 100%;
-  text-align: left;
+  align-items: center; /*추가*/
+  margin-bottom: 20px; /*추가*/
 } /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 9p text-align 왼쪽 정렬*/
 
 section article.profile_picture img {
@@ -56,6 +58,19 @@ section article.profile_picture img {
   margin-bottom: 20px;
   box-shadow: 5px, 15px, 30px, rgba(173, 216, 230, 0.8);
 } /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 9p 그대로 사용*/
+
+section article.profile_picture div {
+  display: flex;
+  padding: 2rem;
+}
+
+section article.profile_picture .introduction {
+  flex: 1;
+}
+
+.introduction p {
+  margin: 0;
+}
 
 section article.profile_picture h1 {
   font-weight: bold;
@@ -70,10 +85,68 @@ section article.profile_picture h2 {
   font-size: 12px;
   font-family: "arial"; /*여기 폰트어썸거로 바꾸자*/
   color: #bbb;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 11p 폰트 변경*/
 
-section .introduction {
-  /*옆으로 정렬할 수 있게 해*/
+section ul.contact {
+  margin-bottom: 25px;
+  text-align: center;
+}
+section ul.contact li {
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+}
+section ul.contact li:last-child {
+  border-bottom: none;
+}
+section ul.contact li i {
+  width: 20%;
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  text-shadow: 2px, 2px, 2px, #ddd;
+}
+section ul.contact li span {
+  font-weight: normal;
+  font-size: 11px;
+  font-family: "orbitron";
+  color: #555;
+  letter-spacing: 1px;
+}
+/*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 13p 그대로 사용*/
+
+#guestbook h2 {
+  margin: 5px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: darkgray;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background: grey;
+}
+
+#messages {
+  flex: 1;
 }
