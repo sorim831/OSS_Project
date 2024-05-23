@@ -15,3 +15,11 @@
 
 - 활용한 부분 : html의 footer 요소
 - 추가 및 수정한 부분 : 내용 수정
+
+3. https://fonts.google.com/specimen/Hi+Melody?subset=korean
+
+- 활용한 부분 : 글씨체 변경
+
+4. https://fontawesome.com/
+
+- 활용한 부분 : 웹 폰트 아이콘 사용 ( 전화, 메일 )

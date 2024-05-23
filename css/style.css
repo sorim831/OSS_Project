@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
 /*
 @import url("폰트어썸")
 */
@@ -26,6 +27,8 @@ body {
 
 /*헤더 영역 만들기*/
 header {
+  font-size: 30px;
+  font-family: "Hi Melody", sans-serif;
   background-color: #fff; /*바꿀예정*/
   padding: 1rem;
   text-align: center;
@@ -55,13 +58,13 @@ section article.profile_picture img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   box-shadow: 5px, 15px, 30px, rgba(173, 216, 230, 0.8);
 } /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 9p 그대로 사용*/
 
 section article.profile_picture div {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section article.profile_picture .introduction {
@@ -72,10 +75,11 @@ section article.profile_picture .introduction {
   margin: 0;
 }
 
+/*
 section article.profile_picture h1 {
   font-weight: bold;
   font-size: 22px;
-  font-family: "arial"; /*여기 폰트어썸거로 바꾸자*/
+  font-family: "Hi Melody", sans-serif;
   line-height: 1;
   color: #555;
   margin-bottom: 5px;
@@ -83,24 +87,46 @@ section article.profile_picture h1 {
 section article.profile_picture h2 {
   font-weight: normal;
   font-size: 12px;
-  font-family: "arial"; /*여기 폰트어썸거로 바꾸자*/
+  font-family: "arial"; 여기 구글폰트로 바꾸자
+  font-family: "Hi Melody", sans-serif;
   color: #bbb;
   margin-bottom: 15px;
 }
+*/
 /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 11p 폰트 변경*/
 
 section ul.contact {
   margin-bottom: 25px;
-  text-align: center;
 }
 section ul.contact li {
-  width: 100%;
-  padding: 10px 0px;
+  width: 10%;
+  padding: 10px 10px;
   border-bottom: 1px solid #eee;
 }
 section ul.contact li:last-child {
   border-bottom: none;
 }
+
+section div.info h1 {
+  width: 10.5%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Hi Melody", sans-serif;
+  line-height: 1;
+  color: #555;
+  margin-bottom: 5px;
+}
+section div.info h2 {
+  width: 10.5%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Hi Melody", sans-serif;
+  color: #bbb;
+}
+/*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 11p 폰트, 정렬 등 변경*/
+
 section ul.contact li i {
   width: 20%;
   text-align: center;
