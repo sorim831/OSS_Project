@@ -172,7 +172,35 @@ form button {
 form button:hover {
   background: grey;
 }
+/*
+#messages {
+  flex: 1;
+}
+*/
+
+#guestbook {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+#guestbook_form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
 
 #messages {
   flex: 1;
+  align-self: flex-end;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.message {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
