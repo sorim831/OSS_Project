@@ -22,25 +22,90 @@ a {
 }
 
 body {
-  background-color: darkslategrey; /*바꿀예정*/
+  /*background-color: lightblue; 바꿀예정*/
+  position: absolute;
 }
 
 /*헤더 영역 만들기*/
+
 header {
   font-size: 30px;
   font-family: "Hi Melody", sans-serif;
-  background-color: #fff; /*바꿀예정*/
-  padding: 1rem;
+  background-color: white;
+  color: black;
+  padding: 2rem;
   text-align: center;
 }
+header::before {
+  content: "";
+  background-image: url("../media/spring.jpg");
+  background-size: contain;
+  filter: blur(20px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+#pageName {
+  overflow: hidden;
+  position: relative;
+}
+
+#pageName h1 {
+  transform: translateX(100%);
+  position: relative;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 nav ul li {
   display: inline;
 }
+/* 인터렉티브 요소 사용 */
+.viewBox {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.slideBox {
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: flowText 10s linear infinite;
+}
+@keyframes flowText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.leftBox,
+.rightBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*https://blog.naver.com/glory_kkyu/223123505008*/
 
 /*프로필 영역 만들기*/
 section {
   padding: 20px;
-  background-color: #fff; /*바꿀예정*/
+
   margin: 50px auto;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -48,15 +113,18 @@ section {
 
 /*프로필 사진*/
 section article.profile_picture {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 100px;
+  margin-bottom: 20px;
   display: flex;
   width: 100%;
   align-items: center; /*추가*/
-  margin-bottom: 20px; /*추가*/
 } /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 9p text-align 왼쪽 정렬*/
 
 section article.profile_picture img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin-bottom: 1px;
   box-shadow: 5px, 15px, 30px, rgba(173, 216, 230, 0.8);
@@ -72,9 +140,16 @@ section article.profile_picture .introduction {
 }
 
 .introduction p {
-  margin: 0;
+  margin-left: 40px;
+  margin-right: 50%;
+  line-height: 40px;
 }
 
+.info {
+  margin-left: 23%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+}
 /*
 section article.profile_picture h1 {
   font-weight: bold;
@@ -99,7 +174,7 @@ section ul.contact {
   margin-bottom: 25px;
 }
 section ul.contact li {
-  width: 10%;
+  width: 20%;
   padding: 10px 10px;
   border-bottom: 1px solid #eee;
 }
@@ -108,7 +183,7 @@ section ul.contact li:last-child {
 }
 
 section div.info h1 {
-  width: 10.5%;
+  width: 20%;
   text-align: center;
   font-weight: bold;
   font-size: 22px;
@@ -118,7 +193,7 @@ section div.info h1 {
   margin-bottom: 5px;
 }
 section div.info h2 {
-  width: 10.5%;
+  width: 20%;
   text-align: center;
   font-weight: normal;
   font-size: 12px;
@@ -143,14 +218,19 @@ section ul.contact li span {
 }
 /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 13p 그대로 사용*/
 
+#guestbook {
+  background-color: white;
+}
+
 #guestbook h2 {
   margin: 5px;
 }
 
-form {
-  flex: 1;
+#guestbook_form {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  margin-right: 25px;
 }
 
 form input,
@@ -163,7 +243,7 @@ form textarea {
 
 form button {
   padding: 10px;
-  background-color: darkgray;
+  background-color: darkcyan;
   color: black;
   border: none;
   border-radius: 5px;
@@ -172,22 +252,22 @@ form button {
 form button:hover {
   background: grey;
 }
-/*
+
 #messages {
   flex: 1;
+  margin-top: 200px;
+  width: 50%;
 }
-*/
 
 #guestbook {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   margin: 20px;
 }
 
 #guestbook_form {
   display: flex;
-  flex-direction: column;
   width: 40%;
 }
 

@@ -13,24 +13,53 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/guestbook.js"></script>
   </head>
-  <header>
-    <h1>송승규 프로필</h1>
-    <nav>
-      <ul>
-        <li>2020204066</li>
-        <li>송승규</li>
-      </ul>
-    </nav>
-  </header>
+
   <body>
+    <header>
+      <div id="pageName">
+        <h1>광운의 미래 송승규</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>2020204066</li>
+          <li>송승규</li>
+        </ul>
+      </nav>
+      <div class="viewBox">
+        <div class="slideBox">
+          <div class="leftBox">
+            <div class="slideItem">Front-end</div>
+            <div class="slideItem">Back-end</div>
+            <div class="slideItem">Data science</div>
+          </div>
+          <div class="rightBox">
+            <div class="slideItem">Front-end</div>
+            <div class="slideItem">Back-end</div>
+            <div class="slideItem">Data science</div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <section id="prifile">
+      <section class="profile">
         <article class="profile_picture">
-          <img src="img/나중에_내사진으로_바꿀예정.jpg" alt="송승규 사진" />
+          <img src="media/profile_picture.jpg" alt="송승규 사진" />
           <div class="introduction">
             <p>
-              이름 : 송승규, 나이 : 만 몇세 이렇게 리스트로 쓰거나 나에 대한
-              내용 여기에 쭉 쓰기
+              광운대학교 인공지능융합대학 정보융합학부 3학년 재학중에 있습니다.
+              프론트앤드, 백앤드, 데이터분석 등 다양한 직무에 대해 관심을 갖고
+              있으며 진로를 결정 중에 있습니다. 컴퓨터공학과 인간공학의
+              융합연구를 수행하여 박사학위를 받았습니다. 그래서 여기에서 줄을 더
+              추가하면 얼마나 되는지 알아보고 만약에 글자수가 너무 많으면 디자인
+              잧에가 이상해지는 경우를 바잊하기 위해서 그랒 수도 조정해야 할 것
+              같습니다. 여기에서 더 글자수를 늘리면 어떻게 될까? 이런거
+              고려하면서 나에 대한 어떤 부분을 소개하고, 등등 뭐 그런걸 잘
+              정해야겠습니다.아 여기가 늘어나네. 오케이 알겠습니다. 이거 이제
+              수정하자. 창업, 벤처인큐베이팅, 대기업의 다양한 근무 경험을 살려
+              지금은 인간-컴퓨터 상호작용, 인공지능 서비스, 디지털경험분석
+              분야의 실용적인 교육과 연구를 수행하고 있습니다. 현재, 사용자
+              경험의 관점에서 인공지능 소프트웨어를 설계/기획, 분석, 개발하는
+              IDEA 연구실을 운영하고 있습니다. [ENG]
             </p>
           </div>
         </article>
@@ -51,8 +80,8 @@
       </section>
 
       <section id="guestbook">
-        <h2>방명록</h2>
         <form id="guestbook_form">
+          <h2>방명록</h2>
           <input type="text" id="name" placeholder="이름" required />
           <textarea id="message" placeholder="메시지" required></textarea>
           <button type="submit">방명록 남기기</button>
@@ -60,6 +89,7 @@
         <div id="messages"></div>
       </section>
     </main>
-    <footer><p>COPYRIGHTⓒKWANGWOON UNIVERSITY. ALL RIGHTS RESERVED</p></footer>
+    <footer><p>송승규ⓒKWANGWOON UNIVERSITY.</p></footer>
   </body>
+  <video src="media/봄의소리왈츠.mp3" autoplay></video>
 </html>
