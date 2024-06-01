@@ -1,9 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 from guestbook import guestbook_router
-
-#app = FastAPI(json_encoder=DateTimeEncoder)
 
 app = FastAPI()
 
@@ -22,10 +21,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+@app.get("/")
+async def welcome() -> dict:
+    return {
+        "msg" : "송승규"
+    }
 
 app.include_router(guestbook_router)
+app.mount("/",StaticFiles(directory="front-end",html=True),name="front-end")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8080)
+    #uvicorn.run(app, host="127.0.0.1", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
