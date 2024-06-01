@@ -150,25 +150,6 @@ section article.profile_picture .introduction {
   margin-right: 20%;
   margin-bottom: 100px;
 }
-/*
-section article.profile_picture h1 {
-  font-weight: bold;
-  font-size: 22px;
-  font-family: "Hi Melody", sans-serif;
-  line-height: 1;
-  color: #555;
-  margin-bottom: 5px;
-}
-section article.profile_picture h2 {
-  font-weight: normal;
-  font-size: 12px;
-  font-family: "arial"; 여기 구글폰트로 바꾸자
-  font-family: "Hi Melody", sans-serif;
-  color: #bbb;
-  margin-bottom: 15px;
-}
-*/
-/*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 11p 폰트 변경*/
 
 section ul.contact {
   margin-bottom: 25px;

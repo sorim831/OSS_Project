@@ -37,21 +37,10 @@ function ShowGuestbook(messages) {
       console.error("Invalid time value:", msg.timestamp);
       timeElement.textContent = "Invalid date";
     }
-    //timeElement.textContent = new Date(msg.timestamp).toLocaleString();
-    //###살려!  timeElement.textContent = new Date(msg.timestamp).toISOString();
-
-    //const currentTime = new Date();
-    //const timeElement = currentTime.toLocaleString(); // 현재 시간을 문자열로 포맷팅
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "삭제";
-    /*
-    if (msg.id !== undefined) {
-      deleteButton.onclick = () => DeleteMessage(msg.id);
-    } else {
-      console.error("Invalid message ID", msg.id);
-    }
-    */
+
     deleteButton.onclick = () => DeleteMessage(msg.id);
 
     messageElement.appendChild(nameElement);
@@ -76,25 +65,10 @@ function AddMessage() {
         document.getElementById("message").value = "";
       })
       .catch((error) => {
-        //console.error("Error adding message:");
         console.error("Error adding message:");
       });
   }
 }
-/*
-function DeleteMessage(id) {
-  axios
-    .delete(`${host}/guestbook/${id}`)
-    .then(() => {
-      Guestbook();
-    })
-    .catch((error) => {
-      console.error(
-        "Error deleting message:",
-        error.response ? error.response.data : error.message
-      );
-    });
-}*/
 
 function DeleteMessage(id) {
   if (id !== undefined) {
