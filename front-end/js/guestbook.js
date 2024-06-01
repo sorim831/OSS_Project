@@ -1,4 +1,5 @@
-const host = "http://127.0.0.1:8080";
+//const host = "http://127.0.0.1:8080";
+const host = "http://54.81.196.162:8080";
 const ContainGuestbook = document.querySelector(`.Contain-Guestbook`);
 
 function Guestbook() {
