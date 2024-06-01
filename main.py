@@ -23,16 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-'''
-@app.delete("/guestbook/{entry_id}", status_code=200)
-async def delete_entry(entry_id: int):
-    global guestbook
-    filtered_guestbook = [entry for entry in guestbook if entry['id'] != entry_id]
-    if len(filtered_guestbook) == len(guestbook):
-        raise HTTPException(status_code=404, detail="Entry not found")
-    guestbook = filtered_guestbook
-    return {"message": "Entry deleted"}
-'''
+
 app.include_router(guestbook_router)
 
 if __name__ == "__main__":

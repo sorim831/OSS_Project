@@ -1,11 +1,8 @@
 from fastapi import FastAPI, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
 from datetime import datetime
-from typing import Optional
-from typing import Dict
-from typing import Any
+from typing import Optional, Dict, Any, List
 import json
 from model import GuestbookForm, GuestbookEntry
 
@@ -17,13 +14,11 @@ class DateTimeEncoder(json.JSONEncoder):
             return o.isoformat() + 'Z'
         return super().default(o)
 
-#guestbook =[]
 guestbook : List[Dict[str,Any]] = []
 id_counter = 1
 
 @guestbook_router.get("/guestbook", response_model=List[GuestbookEntry])
 async def read_guestbook():
-    #print("Guestbook data:", guestbook)  # 로그 추가
     return guestbook
 
 @guestbook_router.post("/guestbook", response_model=GuestbookEntry)

@@ -176,7 +176,7 @@ section ul.contact {
 section ul.contact li {
   width: 20%;
   padding: 10px 10px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid black;
 }
 section ul.contact li:last-child {
   border-bottom: none;
@@ -198,7 +198,7 @@ section div.info h2 {
   font-weight: normal;
   font-size: 12px;
   font-family: "Hi Melody", sans-serif;
-  color: #bbb;
+  color: darkslategrey;
 }
 /*오픈소스프로그래밍 10._Static_Web_with_NginX 강의 11p 폰트, 정렬 등 변경*/
 
