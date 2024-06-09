@@ -6,10 +6,8 @@
 
 1. 오픈소스프로그래밍 10.Static Web with NginX 강의자료
 
-- 활용한 부분 : 프로필 영역 만들기, 배경과 프로필카드 모양 잡기
-- 활용할 부분 : 연락처 목록 완성하기
-- 추가 및 수정한 부분 : width, padding 변경, 정렬 변경
-- 추가 및 수정할 부분 : 배경색 변경, font-family 변경 + 기타등등
+- 활용한 부분 : 프로필 영역 만들기, 배경과 프로필카드 모양 잡기, 연락처 목록
+- 추가 및 수정한 부분 : width, padding 변경, 정렬 변경, 배경 변경, font-family 변경 등
 
 2. (https://ic.kw.ac.kr/main/main.php)
 
